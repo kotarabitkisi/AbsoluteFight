@@ -216,9 +216,9 @@ public class VisualNovelManager : MonoBehaviour
     {
         GameManager.instance.Page.transform.DOScale(Vector3.zero, 1).OnComplete(() =>
         {
-            foreach(CharacterScript char_ in GameManager.instance.allCharacterScripts)
+            foreach (CharacterScript char_ in GameManager.instance.allCharacterScripts)
             {
-               Destroy(char_.gameObject); 
+                Destroy(char_.gameObject);
             }
             GameManager.instance.InitializeCharacterList();
 
