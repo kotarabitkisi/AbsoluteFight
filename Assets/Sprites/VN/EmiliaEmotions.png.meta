@@ -1,0 +1,354 @@
+fileFormatVersion: 2
+guid: aabbf1a527908a34db64b6b934a34646
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1092263542719025555
+    second: EmiliaEmotions_0
+  - first:
+      213: 6460303606972213989
+    second: EmiliaEmotions_1
+  - first:
+      213: -7964839953023110776
+    second: EmiliaEmotions_2
+  - first:
+      213: 1496106693046943830
+    second: EmiliaEmotions_3
+  - first:
+      213: -4142421296414607485
+    second: EmiliaEmotions_4
+  - first:
+      213: 4310002076121802653
+    second: EmiliaEmotions_5
+  - first:
+      213: 7583161266938377865
+    second: EmiliaEmotions_6
+  - first:
+      213: 1041866646516017810
+    second: EmiliaEmotions_7
+  - first:
+      213: -7273573467919138251
+    second: EmiliaEmotions_8
+  - first:
+      213: -458717668311718528
+    second: EmiliaEmotions_9
+  - first:
+      213: -4456996043915699813
+    second: EmiliaEmotions_10
+  - first:
+      213: 2931469889597459863
+    second: EmiliaEmotions_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EmiliaEmotions_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 389
+        width: 240
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39190e0b7ef782f00800000000000000
+      internalID: 1092263542719025555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmiliaEmotions_1
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 388
+        width: 240
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eae0c207eb97a950800000000000000
+      internalID: 6460303606972213989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmiliaEmotions_2
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 359
+        width: 300
+        height: 346
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 881f7332344377190800000000000000
+      internalID: -7964839953023110776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmiliaEmotions_4
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 360
+        width: 282
+        height: 331
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387b13547c92386c0800000000000000
+      internalID: -4142421296414607485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmiliaEmotions_6
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 28
+        width: 240
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986fc56befccc3960800000000000000
+      internalID: 7583161266938377865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmiliaEmotions_8
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 28
+        width: 240
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53249fcc7731f0b90800000000000000
+      internalID: -7273573467919138251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmiliaEmotions_10
+      rect:
+        serializedVersion: 2
+        x: 783
+        y: 27
+        width: 240
+        height: 300
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99551556b19522c0800000000000000
+      internalID: -4456996043915699813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EmiliaEmotions_11
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 0
+        width: 284
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79dc53f355caea820800000000000000
+      internalID: 2931469889597459863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 54d488cf286f83d4abfcdc2f838a6628
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EmiliaEmotions_0: 1092263542719025555
+      EmiliaEmotions_1: 6460303606972213989
+      EmiliaEmotions_10: -4456996043915699813
+      EmiliaEmotions_11: 2931469889597459863
+      EmiliaEmotions_2: -7964839953023110776
+      EmiliaEmotions_3: 1496106693046943830
+      EmiliaEmotions_4: -4142421296414607485
+      EmiliaEmotions_5: 4310002076121802653
+      EmiliaEmotions_6: 7583161266938377865
+      EmiliaEmotions_7: 1041866646516017810
+      EmiliaEmotions_8: -7273573467919138251
+      EmiliaEmotions_9: -458717668311718528
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

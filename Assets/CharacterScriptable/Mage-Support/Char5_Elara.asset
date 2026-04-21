@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e3ab9261e214054da22c7e3c36d5767, type: 3}
+  m_Name: Char5_Elara
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterScriptable
+  charIcon: {fileID: 21300000, guid: 965a32b591f07af4b90e5c7240073ff0, type: 3}
+  VirusColor: {r: 0, g: 0, b: 0, a: 0}
+  charName: 8
+  health: 50
+  defense: 0.05
+  MovementSpeed: 3
+  playSpeed: 2
+  damage: 2
+  penetration: 0.05
+  healForEachTurn: 0
+  evadeProbability: 0.1
+  Skills:
+  - {fileID: 11400000, guid: b61253362a4be874e8372c4868cd4746, type: 2}
+  - {fileID: 11400000, guid: 5d0004656c2d3d34d8259848dfa01b6a, type: 2}
+  - {fileID: 11400000, guid: 553b53fb14db65448adeecfac37d3bc2, type: 2}

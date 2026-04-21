@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e3ab9261e214054da22c7e3c36d5767, type: 3}
+  m_Name: Char15_Rebecca
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterScriptable
+  charIcon: {fileID: -378866714, guid: b8fe369dc31d1974fb9c541d5fb52567, type: 3}
+  VirusColor: {r: 0, g: 0, b: 0, a: 0}
+  charName: 23
+  health: 50
+  defense: 0.1
+  MovementSpeed: 5
+  playSpeed: 5
+  damage: 10
+  penetration: 0.75
+  healForEachTurn: 1
+  evadeProbability: 0.5
+  Skills:
+  - {fileID: 11400000, guid: bbbbc7b4d48d0d246aef3bd7a7d9bd0d, type: 2}
+  - {fileID: 11400000, guid: 48127fbb41919aa4cbe96b66b259f9b2, type: 2}
+  - {fileID: 11400000, guid: def0ceebd98c1384ca6c75ab85e73fde, type: 2}

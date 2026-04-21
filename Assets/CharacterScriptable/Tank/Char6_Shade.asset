@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e3ab9261e214054da22c7e3c36d5767, type: 3}
+  m_Name: Char6_Shade
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterScriptable
+  charIcon: {fileID: 21300000, guid: 0e9c3402a0a483f45b6c33630069b610, type: 3}
+  VirusColor: {r: 0, g: 0, b: 0, a: 0}
+  charName: 9
+  health: 100
+  defense: 0.8
+  MovementSpeed: 2
+  playSpeed: 2
+  damage: 0
+  penetration: 0.05
+  healForEachTurn: 0
+  evadeProbability: 0.05
+  Skills:
+  - {fileID: 11400000, guid: 0f3f26502d88933438353f55b5189775, type: 2}
+  - {fileID: 11400000, guid: 6664d01abb094134887185d0323d35f0, type: 2}
+  - {fileID: 11400000, guid: 9dcdd7c30718dd04e8c0de7e1f86f7c4, type: 2}

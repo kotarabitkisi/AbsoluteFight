@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5e322a88430f94fa46520fd9463f30, type: 3}
+  m_Name: LevelTutorial
+  m_EditorClassIdentifier: Assembly-CSharp::LevelDataScriptable
+  Chars:
+  - SpawningCharData:
+      CharacterDefData: {fileID: 11400000, guid: a42380e26339a4d44bef90bf6711c71a, type: 2}
+      Health: 1
+      Level: 20
+      Exp: 0
+      ReqExp: 0
+    TeamType: 1
+    SpawnTilePos: {x: 0, y: 4}
+  PlaceableTiles:
+  - {x: -2, y: -1}
+  - {x: 1, y: -1}
+  - {x: 1, y: -2}
+  - {x: -1, y: -2}
+  - {x: 0, y: -2}
+  Map: {fileID: 5459832443252829288, guid: 103a7dbf11c43ab4481d22f569e97d3f, type: 3}
+  DialogId: 1
+  isPlayingWhenLose: 1

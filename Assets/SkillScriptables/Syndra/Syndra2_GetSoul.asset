@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b4d4ac36864be748b0cf1d23dcb23e4, type: 3}
+  m_Name: Syndra2_GetSoul
+  m_EditorClassIdentifier: Assembly-CSharp::SkillScriptable
+  TransformedEnemy: {fileID: 0}
+  AvailableTarget: 2
+  isTurnFinishes: 1
+  cooldown: 2
+  justTapToUse: 0
+  useCount: 1
+  skillName: Get Soul
+  skillId: 102
+  range: 1
+  Icon: {fileID: -133984735, guid: 7e89fef4b6d738645a23d4b5c298c332, type: 3}
+  skillDamageBase: 0
+  skillDamageMultiplier: 0
+  skillHealMultiplier: 0
+  skillHealBase: 0
+  skillPenetration: 0
+  skillVirusPercent: 0

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62b77fbf65893b84f992697c361dd801, type: 3}
+  m_Name: Part_1 62
+  m_EditorClassIdentifier: Assembly-CSharp::VisualNovelScriptable
+  textspeed: 40
+  fontSize: 32
+  text: ' The easy way or the hard way?'
+  speakingChars:
+  - {fileID: 11400000, guid: 845fcad0a657a6043a4accc68706aeba, type: 2}
+  - {fileID: 11400000, guid: 28bca7b3cd3fcf64c8fff46db2a41390, type: 2}
+  - {fileID: 11400000, guid: 818cbed9cdff5da4c8341a7f3d38143c, type: 2}
+  - {fileID: 11400000, guid: 357de6d07cf324f46bd406967511049b, type: 2}
+  chosenChar: 02000000
+  ItisDisappearing: 000000000000000000000000000000000000000000000000
+  ObjPositions: 040000000300000002000000060000000000000000000000
+  backgroundId: 10
