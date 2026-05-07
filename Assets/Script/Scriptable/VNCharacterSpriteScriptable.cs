@@ -7,16 +7,19 @@ public class VNCharacterSpriteScriptable : ScriptableObject
     public VisualNovelScriptable.Emotions emotion;
     public Sprite sprite;
 #if UNITY_EDITOR
-    // Inspector'da bir değeri değiştirdiğinde bu fonksiyon tetiklenir
+[ContextMenu("evet")]
     private void OnValidate()
     {
-        string newName = $"{speaking} - {emotion}";
+        string charName = speaking.ToString();
+        string path = "Assets/Sprites/CharImages/" + charName + ".png";
 
-        if (name != newName && !string.IsNullOrEmpty(newName))
+        Sprite foundIcon = UnityEditor.AssetDatabase.LoadAssetAtPath<Sprite>(path);
+
+        if (foundIcon != null)
         {
-            UnityEditor.AssetDatabase.RenameAsset(UnityEditor.AssetDatabase.GetAssetPath(this), newName);
-            UnityEditor.AssetDatabase.SaveAssets();
+            UnityEditor.EditorGUIUtility.SetIconForObject(this, foundIcon.texture);
         }
     }
+
 #endif
 }

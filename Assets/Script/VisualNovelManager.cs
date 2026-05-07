@@ -9,9 +9,11 @@ using UnityEngine.UI;
 
 public class VisualNovelManager : MonoBehaviour
 {
+    public bool DialogPlaying;
     public GameObject Map;
     public GameObject LevelObject;
     public CameraMovement cameraMovementScript;
+    public LevelManager levelManager;
     public ChapterLineScriptable[] chapters;
     public GameObject[] ImageObjects;
     public Color[] charColors;
@@ -24,23 +26,58 @@ public class VisualNovelManager : MonoBehaviour
 
     public Sprite[] BackgroundSprites;
     public Dictionary<VisualNovelScriptable.BackgroundSpriteId, Sprite> BackgroundDictionary = new();
-
-    public Sprite[] CharSprites;
     public Dictionary<VisualNovelScriptable.Positions, float> PositionDictionary = new();
 
-    private Coroutine coroutine;
+    [HideInInspector]public Coroutine coroutine;
     public int DialogOrder = 0;
 
     private InputSystem_Actions inputActions;
 
-    public CanvasGroup VisualNovelCanvasGroup;
+    public CanvasGroup VisualNovelCanvasGroup, MainGameMapCanvasGroup;
 
+    public GameObject[] UIObjects;
+    public VisualNovelScriptable.UIPageName _UIPageName;
+    public Dictionary<VisualNovelScriptable.UIPageName, GameObject> UIDictionary = new();
+
+public static VisualNovelManager instance;
+
+    public void OpenUI()
+    {
+        VisualNovelCanvasGroup.DOFade(0, 1.25f).OnComplete(() =>
+        {
+            UIDictionary[_UIPageName].SetActive(true);
+            UIDictionary[_UIPageName].transform.DOScale(1, 1.25f);
+        });
+    }
+    public void CloseUI()
+    {
+        UIDictionary[_UIPageName].transform.DOScale(0, 1.25f).OnComplete(() =>
+        {
+            UIDictionary[_UIPageName].SetActive(false);
+            VisualNovelCanvasGroup.DOFade(1, 1);
+        });
+    }
+    public void InitializeUIPageDictionary()
+    {
+        var values = System.Enum.GetValues(typeof(VisualNovelScriptable.UIPageName));
+        for (int i = 0; i < UIObjects.Length && i < values.Length; i++)
+        {
+            print((VisualNovelScriptable.UIPageName)values.GetValue(i) + " " + UIObjects[i]);
+            UIDictionary[(VisualNovelScriptable.UIPageName)values.GetValue(i)] = UIObjects[i];
+        }
+    }
     void Awake()
     {
+        instance=this;
         inputActions = new InputSystem_Actions();
 
         InitializePositions();
         InitializeBackgroundImages();
+        InitializeUIPageDictionary();
+    }
+    void Start()
+    {
+        PlayDialogAfter(0);
     }
 
     void OnEnable()
@@ -60,7 +97,7 @@ public class VisualNovelManager : MonoBehaviour
     {
         if (DialogOrder < chosenChapter.scriptables.Length - 1)
         {
-            PlayAnimAfter(1);
+            PlayDialogAfter(1);
         }
     }
 
@@ -68,7 +105,7 @@ public class VisualNovelManager : MonoBehaviour
     {
         if (DialogOrder > 0)
         {
-            PlayAnimAfter(-1);
+            PlayDialogAfter(-1);
         }
     }
 
@@ -93,8 +130,9 @@ public class VisualNovelManager : MonoBehaviour
         PositionDictionary[VisualNovelScriptable.Positions.Right_2] = w * 0.1f;
     }
 
-    public void PlayAnimAfter(int i)
+    public void PlayDialogAfter(int i)
     {
+        if (!DialogPlaying) { return; }
         if (coroutine != null) StopCoroutine(coroutine);
         DOTween.KillAll();
 
@@ -107,7 +145,8 @@ public class VisualNovelManager : MonoBehaviour
 
     public IEnumerator PlayDialogScriptable(VisualNovelScriptable chosenDialog)
     {
-        if (chosenDialog.ChosenLevel != null) { StartGameWhenThisFinished(chosenDialog.ChosenLevel); yield return 0; }
+        //Title ve Text belirlemesi
+
         if (chosenDialog.chosenChar.Length == 0)
         {
             Title.text = "ERROR:THE SPEAKING CHARACTER IS NOT CHOOSED!!!";
@@ -148,7 +187,7 @@ public class VisualNovelManager : MonoBehaviour
         Text.maxVisibleCharacters = 0;
         Text.text = chosenDialog.text;
         Text.fontSize = chosenDialog.fontSize;
-
+        //Arkaplan Değişimi
         if (BackgroundDictionary.ContainsKey(chosenDialog.backgroundId))
         {
             if (BackGround.sprite != BackgroundDictionary[chosenDialog.backgroundId])
@@ -190,13 +229,23 @@ public class VisualNovelManager : MonoBehaviour
                 ImageObjects[i].GetComponent<Image>().DOFade(0, 0.5f);
             }
         }
-
+        if (chosenDialog.ChosenLevel != null) { levelManager.StartGameWhenThisFinished(chosenDialog.ChosenLevel); yield break; }
+        if (chosenDialog._UIPageName != VisualNovelScriptable.UIPageName.NONE)
+        {
+            _UIPageName = chosenDialog._UIPageName;
+            OpenUI();
+        }
+        else if (chosenDialog != null)
+        {
+            CloseUI();
+        }
         int totalVisibleCharacters = chosenDialog.text.Length;
         for (int i = 0; i <= totalVisibleCharacters; i++)
         {
             Text.maxVisibleCharacters = i;
             yield return new WaitForSeconds(1f / chosenDialog.textspeed);
         }
+
     }
 
     public void ChooseChapter(int partId)
@@ -204,76 +253,5 @@ public class VisualNovelManager : MonoBehaviour
         chosenChapter = chapters[partId];
         DialogOrder = 0;
     }
-    public void StartGameWhenThisFinished(LevelDataScriptable Level)
-    {
-        print("StartGameWhenThisFinished");
-        VisualNovelCanvasGroup.DOFade(0, 1.25f).OnComplete(() =>
-        {
-            StartCoroutine(SetupLevelCoroutine(Level));
-        });
-    }
-    public void FinishGameAndOpenNovel(LevelDataScriptable level)
-    {
-        GameManager.instance.Page.transform.DOScale(Vector3.zero, 1).OnComplete(() =>
-        {
-            foreach (CharacterScript char_ in GameManager.instance.allCharacterScripts)
-            {
-                Destroy(char_.gameObject);
-            }
-            GameManager.instance.InitializeCharacterList();
-
-            Destroy(Map);
-            LevelObject.SetActive(false);
-            chosenChapter = chapters[level.DialogId];
-            DialogOrder = 0;
-            VisualNovelCanvasGroup.DOFade(1, 1.25f).OnComplete(() =>
-            {
-                coroutine = StartCoroutine(PlayDialogScriptable(chosenChapter.scriptables[DialogOrder]));
-            });
-
-
-        });
-
-    }
-    public void GameOver()
-    {
-        print("GameOver");
-    }
-    IEnumerator SetupLevelCoroutine(LevelDataScriptable Level)
-    {
-        LevelObject.SetActive(true);
-        Map = Instantiate(Level.Map, Vector3.zero, Quaternion.identity);
-        if (GameManager.instance == null)
-        {
-            Debug.LogError("GameManager instance hala null! Sahne hiyerarşisini kontrol et.");
-            yield break;
-        }
-        GridMapManager gridMapManager = GameManager.instance.gridMapManager;
-        if (gridMapManager == null)
-        {
-            Debug.LogError("GameManager üzerinde GridMapManager scripti bulunamadı!");
-            yield break;
-        }
-        gridMapManager.tilemap = Map.transform.GetChild(0).GetComponent<Tilemap>();
-        gridMapManager.InitializeGridData();
-        foreach (GridMapManager.Node tile in gridMapManager.gridData.Values)
-        {
-            tile.tileScript.InitializePos();
-        }
-        foreach (Vector2Int pos in Level.PlaceableTiles)
-        {
-            gridMapManager.TilesForPutting.Add(pos);
-        }
-        foreach (PlayerDataScriptable.CharacterData char_ in MainGameDesigner.instance.data.characters)
-        {
-            gridMapManager.chosenCharsToPut.Add(char_);
-        }
-        for (int i = 0; i < Level.Chars.Length; i++)
-        {
-            StartCoroutine(GameManager.instance.SpawnCharacter(Level.Chars[i].SpawningCharData, Level.Chars[i].TeamType, Level.Chars[i].SpawnTilePos));
-        }
-        cameraMovementScript.enabled = true;
-        GameManager.instance.levelDataScriptable = Level;
-        gridMapManager.HighlightTilesForPutChar();
-    }
+   
 }

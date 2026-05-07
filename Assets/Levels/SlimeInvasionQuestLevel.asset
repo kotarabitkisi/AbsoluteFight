@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5e322a88430f94fa46520fd9463f30, type: 3}
+  m_Name: SlimeInvasionQuestLevel
+  m_EditorClassIdentifier: Assembly-CSharp::LevelDataScriptable
+  Chars:
+  - SpawningCharData:
+      CharacterDefData: {fileID: 11400000, guid: 4df6f10f3c8f88a49abafaf25fe38a39, type: 2}
+      Health: 1
+      Level: 1
+      Exp: 0
+      ReqExp: 0
+      InQuest: 0
+    TeamType: 1
+    SpawnTilePos: {x: -3, y: 3}
+  - SpawningCharData:
+      CharacterDefData: {fileID: 11400000, guid: 4df6f10f3c8f88a49abafaf25fe38a39, type: 2}
+      Health: 1
+      Level: 1
+      Exp: 0
+      ReqExp: 0
+      InQuest: 0
+    TeamType: 1
+    SpawnTilePos: {x: -2, y: 3}
+  - SpawningCharData:
+      CharacterDefData: {fileID: 11400000, guid: 4df6f10f3c8f88a49abafaf25fe38a39, type: 2}
+      Health: 1
+      Level: 1
+      Exp: 0
+      ReqExp: 0
+      InQuest: 0
+    TeamType: 1
+    SpawnTilePos: {x: -1, y: 3}
+  - SpawningCharData:
+      CharacterDefData: {fileID: 11400000, guid: 4df6f10f3c8f88a49abafaf25fe38a39, type: 2}
+      Health: 1
+      Level: 1
+      Exp: 0
+      ReqExp: 0
+      InQuest: 0
+    TeamType: 1
+    SpawnTilePos: {x: 0, y: 3}
+  - SpawningCharData:
+      CharacterDefData: {fileID: 11400000, guid: 4df6f10f3c8f88a49abafaf25fe38a39, type: 2}
+      Health: 1
+      Level: 1
+      Exp: 0
+      ReqExp: 0
+      InQuest: 0
+    TeamType: 1
+    SpawnTilePos: {x: 1, y: 3}
+  - SpawningCharData:
+      CharacterDefData: {fileID: 11400000, guid: 4df6f10f3c8f88a49abafaf25fe38a39, type: 2}
+      Health: 1
+      Level: 1
+      Exp: 0
+      ReqExp: 0
+      InQuest: 0
+    TeamType: 1
+    SpawnTilePos: {x: -4, y: 3}
+  - SpawningCharData:
+      CharacterDefData: {fileID: 11400000, guid: 4df6f10f3c8f88a49abafaf25fe38a39, type: 2}
+      Health: 1
+      Level: 1
+      Exp: 0
+      ReqExp: 0
+      InQuest: 0
+    TeamType: 1
+    SpawnTilePos: {x: -3, y: 2}
+  - SpawningCharData:
+      CharacterDefData: {fileID: 11400000, guid: 4df6f10f3c8f88a49abafaf25fe38a39, type: 2}
+      Health: 1
+      Level: 1
+      Exp: 0
+      ReqExp: 0
+      InQuest: 0
+    TeamType: 1
+    SpawnTilePos: {x: -2, y: 2}
+  - SpawningCharData:
+      CharacterDefData: {fileID: 11400000, guid: 4df6f10f3c8f88a49abafaf25fe38a39, type: 2}
+      Health: 1
+      Level: 1
+      Exp: 0
+      ReqExp: 0
+      InQuest: 0
+    TeamType: 1
+    SpawnTilePos: {x: 0, y: 2}
+  - SpawningCharData:
+      CharacterDefData: {fileID: 11400000, guid: 4df6f10f3c8f88a49abafaf25fe38a39, type: 2}
+      Health: 1
+      Level: 1
+      Exp: 0
+      ReqExp: 0
+      InQuest: 0
+    TeamType: 1
+    SpawnTilePos: {x: 1, y: 2}
+  PlaceableTiles:
+  - {x: -2, y: -3}
+  - {x: -1, y: -3}
+  - {x: -2, y: -4}
+  - {x: -1, y: -4}
+  - {x: 0, y: -4}
+  Map: {fileID: 5459832443252829288, guid: c09b652ca51143049b3643b342d37416, type: 3}
+  DialogId: -1
+  isPlayingWhenLose: 1

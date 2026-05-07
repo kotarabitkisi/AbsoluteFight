@@ -182,7 +182,7 @@ TextureImporter:
       name: Emilia
       rect:
         serializedVersion: 2
-        x: 1266
+        x: 1267
         y: 133
         width: 259
         height: 408
@@ -196,6 +196,28 @@ TextureImporter:
       bones: []
       spriteID: 8eae97f78c55081409c37d24372205a0
       internalID: -1944072925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Light kNights_0
+      rect:
+        serializedVersion: 2
+        x: 1264
+        y: 205
+        width: 268
+        height: 335
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7d2f940fe3b5514aae6fa6d25064c98
+      internalID: 955060773
       vertices: []
       indices: 
       edges: []
@@ -219,6 +241,7 @@ TextureImporter:
       Damian: -7045490387998525155
       Emilia: -1944072925
       Johnson: 1286014213
+      Light kNights_0: 955060773
       Rebecca: -378866714
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0

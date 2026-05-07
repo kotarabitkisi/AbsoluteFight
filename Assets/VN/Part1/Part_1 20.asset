@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b77fbf65893b84f992697c361dd801, type: 3}
   m_Name: Part_1 20
   m_EditorClassIdentifier: Assembly-CSharp::VisualNovelScriptable
+  _UIPageName: 0
+  ChosenLevel: {fileID: 0}
   textspeed: 40
   fontSize: 32
   text: WHAT?!

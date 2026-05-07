@@ -113,23 +113,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Logos_0
+      name: SuperRare
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1408
-        height: 768
+        x: 550
+        y: 32
+        width: 163
+        height: 163
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b296bfc4201b0e380800000000000000
-      internalID: -8943954236518209237
+      spriteID: aca2c923d61652b46a6ad64fb5af169a
+      internalID: 642231642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Legendary
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 32
+        width: 141
+        height: 161
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f62d377186cb2469f235373bb12d45
+      internalID: -423364698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Common
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 25
+        width: 163
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0321920c4aeeb374184179972e42b263
+      internalID: -1116191261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Uncommon
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 25
+        width: 157
+        height: 170
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5309aa2d26a01214cb8f18e77c921751
+      internalID: -1061590840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rare
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 31
+        width: 161
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128c3a497067dbe4e9042bd69bdef209
+      internalID: -264763339
       vertices: []
       indices: 
       edges: []
@@ -138,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a009bb3dba343c249b6ae599b46b8f33
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +234,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":178.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+      - key: SpriteEditor.SliceOnImport
+        value: False
     nameFileIdTable:
+      Common: -1116191261
+      Legendary: -423364698
       Logos_0: -8943954236518209237
+      Logos_3: 390462343
+      Rare: -264763339
+      SuperRare: 642231642
+      Uncommon: -1061590840
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VNCharacterSpriteScriptable
   speaking: 3
   emotion: 0
-  sprite: {fileID: 21300000, guid: 9f9b0041e5e0d1946bf6eb66af1e411c, type: 3}
+  sprite: {fileID: -1483951002, guid: 9f9b0041e5e0d1946bf6eb66af1e411c, type: 3}

@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62b77fbf65893b84f992697c361dd801, type: 3}
+  m_Name: Part_1-2 296
+  m_EditorClassIdentifier: Assembly-CSharp::VisualNovelScriptable
+  _UIPageName: 0
+  ChosenLevel: {fileID: 0}
+  textspeed: 40
+  fontSize: 32
+  text: "But\u2014"
+  speakingChars:
+  - {fileID: 11400000, guid: 2471edc694b62fa4ab36033afcfd006e, type: 2}
+  - {fileID: 11400000, guid: 9105263b089e76646a7392581d50754c, type: 2}
+  - {fileID: 11400000, guid: 4653aa5a1f52813438d752d556cab589, type: 2}
+  - {fileID: 11400000, guid: 777a54fe03a8e284cbadc1256f57a042, type: 2}
+  - {fileID: 11400000, guid: e9724c04e1c511e49a98ec70a983085b, type: 2}
+  chosenChar: 03000000
+  ItisDisappearing: 010000000100000001000000010000000100000002000000
+  ObjPositions: 040000000300000007000000060000000200000000000000
+  backgroundId: 26

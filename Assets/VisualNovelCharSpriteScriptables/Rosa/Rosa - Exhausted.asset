@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22e8c94c5159fd48bbfe429062077b0, type: 3}
+  m_Name: Rosa - Exhausted
+  m_EditorClassIdentifier: Assembly-CSharp::VNCharacterSpriteScriptable
+  speaking: 11
+  emotion: 9
+  sprite: {fileID: 211100234, guid: d3f464cdaa75a4046a83e7f85aa8ea73, type: 3}

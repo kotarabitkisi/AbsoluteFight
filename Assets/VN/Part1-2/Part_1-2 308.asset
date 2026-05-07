@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62b77fbf65893b84f992697c361dd801, type: 3}
+  m_Name: Part_1-2 308
+  m_EditorClassIdentifier: Assembly-CSharp::VisualNovelScriptable
+  _UIPageName: 0
+  ChosenLevel: {fileID: 0}
+  textspeed: 40
+  fontSize: 32
+  text: I'm young to get executed yet.
+  speakingChars:
+  - {fileID: 11400000, guid: 1fef3f3ff3c4cbc41807723c6f45d3bb, type: 2}
+  - {fileID: 11400000, guid: 9105263b089e76646a7392581d50754c, type: 2}
+  - {fileID: 11400000, guid: a698cfc141bf841468255d458eaa8a20, type: 2}
+  - {fileID: 11400000, guid: 03d02c21556496648aa8d2561059952f, type: 2}
+  - {fileID: 11400000, guid: e9724c04e1c511e49a98ec70a983085b, type: 2}
+  chosenChar: 01000000
+  ItisDisappearing: 010000000100000002000000020000000100000002000000
+  ObjPositions: 040000000300000007000000060000000700000000000000
+  backgroundId: 26

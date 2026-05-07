@@ -14,5 +14,6 @@ public class PlayerDataScriptable : ScriptableObject
         public float Health;
         public int Level;
         public float Exp, ReqExp;
+        public bool InQuest;
     }
 }

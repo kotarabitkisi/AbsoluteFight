@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "LevelDataScriptable", menuName = "Scriptable Objects/LevelDataScriptable")]
@@ -17,6 +16,7 @@ public class LevelDataScriptable : ScriptableObject
         public Vector2Int SpawnTilePos;
     }
     public int DialogId;
+    public QuestScriptable CompletedQuestAfterLevel;
     public bool isPlayingWhenLose;
 
 

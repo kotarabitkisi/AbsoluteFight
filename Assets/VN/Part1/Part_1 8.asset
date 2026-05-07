@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62b77fbf65893b84f992697c361dd801, type: 3}
   m_Name: Part_1 8
   m_EditorClassIdentifier: Assembly-CSharp::VisualNovelScriptable
+  _UIPageName: 0
+  ChosenLevel: {fileID: 0}
   textspeed: 40
   fontSize: 32
   text: 'Oh! Hello, Ma''am. What brings you here? '
@@ -20,7 +22,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 28bca7b3cd3fcf64c8fff46db2a41390, type: 2}
   - {fileID: 11400000, guid: 2cc85577a5de3be438098a6b68161291, type: 2}
   - {fileID: 11400000, guid: 818cbed9cdff5da4c8341a7f3d38143c, type: 2}
-  chosenChar: 03000000
+  chosenChar: 05000000
   ItisDisappearing: 000000000000000000000000000000000000000000000000
   ObjPositions: 030000000400000005000000020000000000000000000000
   backgroundId: 0

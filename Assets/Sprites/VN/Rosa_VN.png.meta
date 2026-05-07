@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: f6d5c3e551b806449b90b25ece113e55
+guid: b9593c1d566bb8143a43c74d11e8f127
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1787716107935095728
-    second: Gemini_Generated_Image_1yfdww1yfdww1yfd_0
+      213: 4074562790716402923
+    second: Gemini_Generated_Image_ukf3feukf3feukf3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -113,23 +113,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Gemini_Generated_Image_1yfdww1yfdww1yfd_0
+      name: Rosa_VN_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1380
-        height: 752
+        x: 364
+        y: 446
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f221d7144446d49bb2a46a962e8ff3
+      internalID: 861203877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosa_VN_1
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 449
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0077bf5e1742cbe429b3b6749dc1523e
+      internalID: 1640085690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosa_VN_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 76
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a83e9b4baa2fef644b43fcee7acb9378
+      internalID: -73717589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosa_VN_3
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 76
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50b3bf53b4e8a2f40975bb4f6640d7b1
+      internalID: -1588808948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosa_VN_4
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 76
+        width: 200
+        height: 250
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49746b666fdb05c4597775580b9637d0
+      internalID: 365908195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rosa_VN_5
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 447
+        width: 200
+        height: 250
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 054e84beba1c037e0800000000000000
-      internalID: -1787716107935095728
+      spriteID: a9195e39b1c4acb409cf22a0a84a466b
+      internalID: 1573284843
       vertices: []
       indices: 
       edges: []
@@ -138,7 +248,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 31e3e401af305f74bb7ba1ec0a1c448a
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +256,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":200.0,"y":250.0},"gridSpriteOffset":{"x":70.0,"y":56.0},"gridSpritePadding":{"x":94.0,"y":120.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Gemini_Generated_Image_1yfdww1yfdww1yfd_0: -1787716107935095728
+      Rosa_VN_0: 861203877
+      Rosa_VN_1: 1640085690
+      Rosa_VN_2: -73717589
+      Rosa_VN_3: -1588808948
+      Rosa_VN_4: 365908195
+      Rosa_VN_5: 1573284843
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e3ab9261e214054da22c7e3c36d5767, type: 3}
   m_Name: Char9_Cyra
   m_EditorClassIdentifier: Assembly-CSharp::CharacterScriptable
-  charIcon: {fileID: 21300000, guid: 9f9b0041e5e0d1946bf6eb66af1e411c, type: 3}
+  charIcon: {fileID: 7213516879227760589, guid: 9f9b0041e5e0d1946bf6eb66af1e411c, type: 3}
   VirusColor: {r: 0.19260229, g: 0.7562608, b: 0.8037735, a: 1}
   charName: 13
   health: 50
@@ -27,3 +27,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 857dda138a8b89c4e87f94a0b7ea1796, type: 2}
   - {fileID: 11400000, guid: 0d10fd9ad212d0e4798f07f4576cdbe9, type: 2}
   - {fileID: 11400000, guid: 4fe81c743b4f63046a2aa31a0e631869, type: 2}
+  healthScaling: 0
+  defenseScaling: 0
+  MovementSpeedScaling: 0
+  playSpeedScaling: 0
+  damageScaling: 0
+  penetrationScaling: 0
+  healForEachTurnScaling: 0
+  evadeProbabilityScaling: 0

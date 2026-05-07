@@ -139,6 +139,17 @@
                 },
                 {
                     "name": "",
+                    "id": "5b554ed8-2a62-46fd-8a1e-1f89048dbdd5",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "NextDialogue",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "4e2c4671-f8ef-4184-8f82-279f7bc686fc",
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",

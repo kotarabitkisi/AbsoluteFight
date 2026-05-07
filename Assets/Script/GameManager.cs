@@ -5,6 +5,7 @@ using DG.Tweening;
 using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
 
@@ -16,7 +17,7 @@ public class GameManager : MonoBehaviour
     public Button Btn;
     public LevelDataScriptable levelDataScriptable;
     public VisualNovelManager novelManager;
-
+public LevelManager levelManager;
     public InputSystem_Actions inputActions;
     readonly Color[] TeamColors = new Color[]
     {
@@ -125,7 +126,7 @@ public class GameManager : MonoBehaviour
     {
         Page.SetActive(true);
         TitleText.text = "You Win";
-        Btn.onClick.AddListener(() => novelManager.FinishGameAndOpenNovel(levelDataScriptable));
+        Btn.onClick.AddListener(() => levelManager.FinishGameAndOpenNovel(levelDataScriptable));
         Page.transform.DOScale(Vector3.one, 1);
     }
     public void Lose()
@@ -134,9 +135,9 @@ public class GameManager : MonoBehaviour
         TitleText.text = "YouLose";
         if (levelDataScriptable.isPlayingWhenLose)
         {
-            Btn.onClick.AddListener(() => novelManager.FinishGameAndOpenNovel(levelDataScriptable));
+            Btn.onClick.AddListener(() => levelManager.FinishGameAndOpenNovel(levelDataScriptable));
         }
-        else { Btn.onClick.AddListener(() => novelManager.GameOver()); }
+        else { Btn.onClick.AddListener(() => levelManager.GameOver()); }
         Page.transform.DOScale(Vector3.one, 1);
     }
     void Update()
@@ -185,6 +186,10 @@ public class GameManager : MonoBehaviour
     }
     public void HandleMovementClick(InputAction.CallbackContext context)
     {
+        if (IsPointerOverUI())
+        {
+            return;
+        }
         print("clicked");
         print(context.phase);
         if (isMoving || context.phase != InputActionPhase.Performed) return;
@@ -219,6 +224,23 @@ public class GameManager : MonoBehaviour
             }
 
         }
+    }
+    private bool IsPointerOverUI()
+    {
+        PointerEventData eventDataCurrentPosition = new(EventSystem.current)
+        {
+            position = Mouse.current.position.ReadValue()
+        };
+
+        List<RaycastResult> results = new();
+        EventSystem.current.RaycastAll(eventDataCurrentPosition, results);
+        foreach (RaycastResult result in results)
+        {
+            print(result.gameObject.name);
+        }
+        
+
+        return results.Count > 0;
     }
     void OnEnable()
     {

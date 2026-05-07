@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62b77fbf65893b84f992697c361dd801, type: 3}
+  m_Name: Part_1-2 334
+  m_EditorClassIdentifier: Assembly-CSharp::VisualNovelScriptable
+  _UIPageName: 0
+  ChosenLevel: {fileID: 0}
+  textspeed: 40
+  fontSize: 16
+  text: "SAImon: Certainly. Interpreting... Emilia gave you the IDs because she\u2019s
+    in love with Simon and will invite him to date."
+  speakingChars:
+  - {fileID: 11400000, guid: e0606be89f617f0428b7ed2349487b0b, type: 2}
+  - {fileID: 11400000, guid: 0b6789fe22119ae48b1dbc18e10fea6b, type: 2}
+  - {fileID: 11400000, guid: d75b25de8e310574f907023097a689e2, type: 2}
+  - {fileID: 11400000, guid: f10c69231ec5f9b47b42c40ddad377a1, type: 2}
+  - {fileID: 11400000, guid: e9724c04e1c511e49a98ec70a983085b, type: 2}
+  chosenChar: 04000000
+  ItisDisappearing: 010000000100000001000000010000000200000002000000
+  ObjPositions: 040000000300000007000000060000000500000000000000
+  backgroundId: 26

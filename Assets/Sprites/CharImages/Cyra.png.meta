@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -116,10 +116,10 @@ TextureImporter:
       name: Cyra
       rect:
         serializedVersion: 2
-        x: 19
-        y: 653
-        width: 384
-        height: 508
+        x: 0
+        y: 0
+        width: 431
+        height: 543
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,12 +134,34 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Cyra_VN
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 58
+        width: 376
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99296a3993425ea4c9f3ebc66fef89ad
+      internalID: -1483951002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
     spriteID: fa1998c1e1a4b6149b7e200dcd5e48ab
-    internalID: 0
+    internalID: 201283900
     vertices: []
     indices: 
     edges: []
@@ -149,6 +171,7 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Cyra: 7213516879227760589
+      Cyra_VN: -1483951002
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

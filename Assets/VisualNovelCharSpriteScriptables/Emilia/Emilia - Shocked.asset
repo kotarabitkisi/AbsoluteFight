@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22e8c94c5159fd48bbfe429062077b0, type: 3}
+  m_Name: Emilia - Shocked
+  m_EditorClassIdentifier: Assembly-CSharp::VNCharacterSpriteScriptable
+  speaking: 7
+  emotion: 4
+  sprite: {fileID: -7273573467919138251, guid: aabbf1a527908a34db64b6b934a34646, type: 3}

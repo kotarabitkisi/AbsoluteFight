@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62b77fbf65893b84f992697c361dd801, type: 3}
+  m_Name: Part_1-2 121
+  m_EditorClassIdentifier: Assembly-CSharp::VisualNovelScriptable
+  _UIPageName: 0
+  ChosenLevel: {fileID: 0}
+  textspeed: 40
+  fontSize: 32
+  text: "Hahaha, you\u2019re joking. No AI\u2014 WHAT?"
+  speakingChars: []
+  chosenChar: 04000000
+  ItisDisappearing: 020000000200000002000000000000000000000000000000
+  ObjPositions: 000000000000000000000000000000000000000000000000
+  backgroundId: 25
